@@ -1,0 +1,30 @@
+<div class="container">
+  <br><br>
+  <button type="button" class="btn btn-success">Ajouter livre</button>
+  <table class="table table-striped ">
+    <tr scope="row">
+      <th scope="col">id</th>
+      <th scope="col">titre</th>
+      <th scope="col">auteur</th>
+      <th scope="col">prix</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+    </tr>
+        <tr *ngFor="let book of books"scope="row" >
+          <td>{{book.id}}</td>
+          <td>{{book.titre}}</td>
+          <td>{{book.auteur}}</td>
+          <td>{{book.prix}}</td>
+          <td><button type="button" class="btn btn-primary">Update</button>
+          </td>
+          <td><button type="button" class="btn btn-danger">delete</button>
+          </td>
+        </tr>
+
+
+
+
+
+    </table>
+
+</div>
